@@ -11,7 +11,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 function Slider() {
   return (
-    <div class="container-fluid p-0 mb-5">
+    <div className="container-fluid p-0 mb-5">
 
           <Swiper className={style.swiper}
             // install Swiper modules
@@ -28,27 +28,27 @@ function Slider() {
             }}
           >
             <SwiperSlide className={style.swiper_slide}>
-              <div class="carousel-item active">
+              <div className="carousel-item active">
                 <Image alt="carousel" src='/images/carousel-1.jpg' fill={true}/>
-                <div class={`${style.slider_caption } carousel-caption d-flex flex-column align-items-center justify-content-center`}>
-                  <h2 class="text-primary font-weight-medium m-0">
+                <div className={`${style.slider_caption } carousel-caption d-flex flex-column align-items-center justify-content-center`}>
+                  <h2 className="text-primary font-weight-medium m-0">
                     We Have Been Serving
                   </h2>
-                  <h1 class="display-1 text-white m-0">COFFEE</h1>
-                  <h2 class="text-white m-0">* SINCE 1950 *</h2>
+                  <h1 className="display-1 text-white m-0">COFFEE</h1>
+                  <h2 className="text-white m-0">* SINCE 1950 *</h2>
                 </div>
               </div>
             </SwiperSlide>
 
             <SwiperSlide className={style.swiper_slide}>
-              <div class="carousel-item active">
+              <div className="carousel-item active">
                 <Image alt="carousel" src='/images/carousel-2.jpg' fill={true}/>
-                <div class={`${style.slider_caption } carousel-caption d-flex flex-column align-items-center justify-content-center`}>
-                  <h2 class="text-primary font-weight-medium m-0">
+                <div className={`${style.slider_caption } carousel-caption d-flex flex-column align-items-center justify-content-center`}>
+                  <h2 className="text-primary font-weight-medium m-0">
                     We Have Been Serving
                   </h2>
-                  <h1 class="display-1 text-white m-0">COFFEE</h1>
-                  <h2 class="text-white m-0">* SINCE 1950 *</h2>
+                  <h1 className="display-1 text-white m-0">COFFEE</h1>
+                  <h2 className="text-white m-0">* SINCE 1950 *</h2>
                 </div>
               </div>
             </SwiperSlide>
