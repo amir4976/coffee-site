@@ -1,9 +1,36 @@
 {
-    "posts": [
-      { "id": 1, "title": "json-server", "author": "typicode" }
-    ],
-    "comments": [
-      { "id": 1, "body": "some comment", "postId": 1 }
-    ],
-    "profile": { "name": "typicode" }
-  }
+    "menu" :[
+        {
+            "id":1,
+            "title":"black coffee" ,
+            "desc": "Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor",
+            "price":8 ,
+            "img": "images/menu-1.jpg", 
+            "off":0
+        },
+        {
+            "id":2,
+            "title":"chocolete coffee" ,
+            "desc": "Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor",
+            "price":9 ,
+            "img": "images/menu-2.jpg", 
+            "off":0 
+        },
+    ]
+    ,"services":[
+        {
+            "id":1,
+            "title":"fastest door delivery" ,
+            "img":"images/service-1.jpg",
+            "desc": "Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor",
+            "icon": "faTruck",
+        },
+        {
+            "id":2,
+            "title":"fastest door delivery" ,
+            "img":"images/service-1.jpg",
+            "desc": "Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor",
+            "icon": "faTruck",
+        }
+    ]
+}
