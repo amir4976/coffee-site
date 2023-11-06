@@ -1,6 +1,34 @@
 {
-    "menu": [
+    "menu": {
+      "hot":[ {
+        "id": 1,
+        "title": "Black Coffee",
+        "desc": "Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor",
+        "price": 8,
+        "img": "/images/menu-1.jpg",
+        "off": 0
+      },
+      { 
+        "id": 2,
+        "title": "Chocolete Coffee",
+        "desc": "Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor",
+        "price": 7,
+        "img": "/images/menu-2.jpg",
+        "off": 0
+      },
       {
+        "id": 3,
+        "title": "Coffee",
+        "desc": "Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor",
+        "price": 7,
+        "img": "/images/menu-3.jpg",
+        "off": 0
+      }],
+
+
+
+
+      "cold":[ {
         "id": 1,
         "title": "Black Coffee",
         "desc": "Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor",
@@ -21,10 +49,12 @@
         "title": "Coffee",
         "desc": "Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor",
         "price": 7,
-        "img": "/images/menu-2.jpg",
+        "img": "/images/menu-3.jpg",
         "off": 0
-      }
-    ],
+      }]
+    }
+
+  ,
   
     "services": [
       {
