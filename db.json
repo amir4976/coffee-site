@@ -116,5 +116,15 @@
       "productID": 2,
       "score": 4.5
     }
+  ],
+  "reservation": [
+    {
+      "name": "ssss",
+      "email": "amirhosianahmadi4976@gmail.com",
+      "date": "2",
+      "time": "10",
+      "persons": "2",
+      "id": 1
+    }
   ]
 }
