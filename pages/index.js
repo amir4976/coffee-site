@@ -5,6 +5,7 @@ import About from '@/components/templates/Index/About'
 import Services from '@/components/templates/Index/Services'
 import Offer from '@/components/templates/Index/Offer'
 import Menu from '@/components/templates/Index/Menu'
+import Reservation from '@/components/templates/index/Reservation'
 export default function Home(props) {
   console.log(props.res)
   return (
@@ -14,6 +15,7 @@ export default function Home(props) {
   <Services services={props.resService}/> 
   <Offer/>
   <Menu menu={props.resMenu}/>
+  <Reservation/>
    </>
   )
 }
