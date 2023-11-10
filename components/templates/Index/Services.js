@@ -9,7 +9,7 @@ return (
             <div class="section-title">
                 <h4 class="text-primary text-uppercase" style={{letterSpacing: '5px'}}>Our Services</h4>
                 <h1 class="display-4">Fresh & Organic Beans</h1>
-            </div>
+            </div> 
             <div class="row">
                 {services.map((serve)=>(
                   <ServisesItem key={serve.id} img={serve.img} title={serve.title} dis={serve.desc}/>
