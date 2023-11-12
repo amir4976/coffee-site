@@ -107,14 +107,37 @@
       "username": "Q_Yolme",
       "body": "Perfect Coffee :))",
       "productID": 1,
-      "score": 5
+      "score": 5,
+      "Profession":"ceo",
+      "img":"/images/testimonial-1.jpg"
+
     },
     {
       "id": 2,
       "username": "Amin_Saeedi",
       "body": "Perfect Coffee :))",
       "productID": 2,
-      "score": 4.5
+      "score": 4.5,
+      "Profession":"ceo",
+      "img":"/images/testimonial-2.jpg"
+    },
+    {
+      "id": 3,
+      "username": "Amin_Saeedi",
+      "body": "Perfect Coffee :))",
+      "productID": 2,
+      "score": 4.5,
+      "Profession":"ceo",
+      "img":"/images/testimonial-3.jpg"
+    },
+    {
+      "id": 4,
+      "username": "Amin_Saeedi",
+      "body": "Perfect Coffee :))",
+      "productID": 2,
+      "score": 4.5,
+      "Profession":"ceo",
+      "img":"/images/testimonial-4.jpg"
     }
   ],
   "reservation": [
