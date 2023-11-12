@@ -7,6 +7,7 @@ import Offer from '@/components/templates/Index/Offer'
 import Menu from '@/components/templates/Index/Menu'
 import Reservation from '@/components/templates/index/Reservation'
 import Testimonial from '@/components/templates/index/Testimonial'
+import Footer from '@/components/modules/Footer/Footer'
 export default function Home(props) {
   console.log(props.res)
   return (
@@ -18,6 +19,7 @@ export default function Home(props) {
   <Menu menu={props.resMenu}/>
   <Reservation/>
   <Testimonial comments={props.resComments}/>
+  <Footer/>
    </>
   )
 }
