@@ -6,6 +6,7 @@ import Services from '@/components/templates/Index/Services'
 import Offer from '@/components/templates/Index/Offer'
 import Menu from '@/components/templates/Index/Menu'
 import Reservation from '@/components/templates/index/Reservation'
+import Testimonial from '@/components/templates/index/Testimonial'
 export default function Home(props) {
   console.log(props.res)
   return (
@@ -16,6 +17,7 @@ export default function Home(props) {
   <Offer/>
   <Menu menu={props.resMenu}/>
   <Reservation/>
+  <Testimonial comments={props.resComments}/>
    </>
   )
 }
@@ -27,8 +29,12 @@ export async function getStaticProps() {
   const FetchDataMenu= await fetch('http://localhost:3000/menu')
   const resMenu = await FetchDataMenu.json()
 
+  const FetchDataComments= await fetch('http://localhost:3000/comment')
+  const resComments = await FetchDataComments.json()
+
 
     return{
-      props:{resService,resMenu}
+      props:{resService,resMenu,resComments},
+      revalidate: 12,
     }
 }
