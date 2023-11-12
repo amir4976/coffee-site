@@ -3,7 +3,7 @@ import style from '@/styles/Navbar.module.css'
 import Link from 'next/link'
 function Navbar() {
   return (
-    <div className={`container-fluid p-0 ${style.nav_bar}`}>
+    <div className={`container-fluid sticky top-0 p-0 ${style.nav_bar}`}>
         <nav className={`${style.navbar} ${style.navbar_expand_lg} bg-none navbar-dark py-3`}>
             <Link href="/" className={`${style.navbar_brand} px-lg-4 m-0`}>
                 <h1 className="m-0 display-4 text-uppercase text-white">Next-Coffee</h1>
