@@ -22,7 +22,7 @@ export default function Home(props) {
   <Footer/>
    </>
   )
-}
+} 
    
 export async function getStaticProps() {
   const FetchDataService = await fetch('http://localhost:3000/services')
