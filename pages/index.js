@@ -12,8 +12,8 @@ export default function Home(props) {
   console.log(props.res)
   return (
    <>
-  <Slider/>
-  <About/>
+  <Slider/> 
+  <About/> 
   <Services services={props.resService}/> 
   <Offer/>
   <Menu menu={props.resMenu}/>
