@@ -21,7 +21,7 @@ export default function Home(props) {
   <Testimonial comments={props.resComments}/>
   <Footer/>
    </>
-  )
+  ) 
 }
 
 export async function getStaticProps() {
