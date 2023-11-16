@@ -2,7 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 
 function MenuItem(props) {
-    
+    console.log(props.menu)
   return (
     <div class="row align-items-center mb-5">
     <div class="col-4 col-sm-3">

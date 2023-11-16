@@ -13,7 +13,7 @@ function Menu({menu}) {
             <div class="row">
                 <div class="col-lg-6">
                     <h1 class="mb-5">Hot Coffee</h1>
-                {menu.hot.map(item=>(
+                {menu.filter(item=>item.type =='HOT').map(item=>(
                     <MenuItem key={item.id} img={item.img} desc={item.desc} title={item.title}  price={item.price} />
                 ))}
 
@@ -23,7 +23,7 @@ function Menu({menu}) {
                 <div class="col-lg-6">
                 <h1 class="mb-5">cold Coffee</h1>
 
-                {menu.cold.map(item=>(
+                {menu.filter(item=>item.type == "COLD").map(item=>(
                     <MenuItem key={item.id} img={item.img} desc={item.desc} title={item.title}  price={item.price} />
                 ))}
                 </div>
