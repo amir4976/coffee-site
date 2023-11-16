@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
-function Header() {
+
+function Header(props) {
   const router = useRouter()
-  console.log(router.pathname)
+
+
+  // every time the page is loaded it search if title was equal to the location show the page title
   const [TitlePage,setTitlePage] = useState()
 
   useEffect(()=>{
@@ -25,12 +28,20 @@ function Header() {
       case "/contact":
         setTitlePage('Contact')
         break;
+      case "/search":
+        setTitlePage('search')
+        break;
 
 
 
       default:
         break;
     }
+
+
+     
+    
+
   },[])
 
   return (
