@@ -19,7 +19,7 @@ const handler = (req,res)=>{
             res.json(users)
             break;
         }
-        case "PUT":{
+         case "PUT":{
             res.json('user replace')
             break;
         }
