@@ -1,6 +1,10 @@
+
 import users from "@/data/db"
 
+
 const handler =(req,res)=>{
+    
+
     if (req.method === "GET"){
         const {id}= req.query;
         console.log(id)

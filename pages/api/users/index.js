@@ -1,3 +1,6 @@
+import path from 'path'
+import fs from 'fs'
+
 let users = [
     {id:1,
     username :'amir',
@@ -9,9 +12,15 @@ let users = [
 const handler = (req,res)=>{
     switch (req.method) {
         case "GET":{
-            res.json('hi sir')
-            break;
+            const dbPath = path.join(process.cwd(),'data','db.json');
+            const dbFilesystem = fs.readFileSync(dbPath);
+            const parsedData = JSON.parse(dbFilesystem);
+            
+            console.log(parsedData)
+            res.json(parsedData)
+            break
         }
+        
         case "POST":{
             const {username , email , password} = JSON.parse(req.body);
             
