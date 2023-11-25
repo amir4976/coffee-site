@@ -13,6 +13,8 @@ const handler = (req, res) => {
       res.json(parsedData);
       break;
     }
+    
+
 
     case "POST": {
       // so we get information from users
@@ -49,16 +51,24 @@ const handler = (req, res) => {
 
       break;
     }
+
+
+
     case "PUT": {
       res.json("user replace");
       break;
     }
+
+
+
     case "DELETE": {
       console.log(req.query)
       res.json("user deleted");
       break;
 
     }
+
+
 
     default:
       break;
