@@ -58,9 +58,6 @@ const handler = (req, res) => {
           user.password = password;
           return true;
         }
-      });
-
-      console.log(req.body)
       const err = fs.writeFileSync(dbPath,JSON.stringify({...parsedData}));
       if(err){
         res.json({message:"error"})
