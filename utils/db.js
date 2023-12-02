@@ -4,6 +4,7 @@ const connectToDB = async () => {
     // because of the connect method we use try catch
   try {
     // and if connection[0].ready state was true it return false
+    // pay attention for connectionS name
     if (mongoose.connections[0].readyState) {
       return false;
     }
