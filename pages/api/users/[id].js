@@ -71,6 +71,23 @@ const handler = async (req, res) => {
     }
 
     
+
+
+    if (isUser) {
+      parsedData.users.some((user) => {
+        if (String(user.id) === String(id)) {
+          user.email = email;
+          user.username = username;
+          user.password = password;
+          return true;
+        }
+      const err = fs.writeFileSync(dbPath,JSON.stringify({...parsedData}));
+      if(err){
+        res.json({message:"error"})
+      }else{
+        res.json({message:"user updated successfully"})
+      }
+
   } else {
     return res.status(404).json({ Message: "not found" });
   }
