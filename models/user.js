@@ -13,14 +13,14 @@ const schema = mongoose.Schema({
             // pattern 
         },
         password:{
-            type:any,
+            type:String,
             required:true,
             minLength:8 ,
         },
 })
 
 
-const model = mongoose.model('User',schema)
+const model = mongoose.models.User || mongoose.model('User',schema)
 
 export default model
 
